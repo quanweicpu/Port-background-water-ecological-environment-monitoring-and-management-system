@@ -1,11 +1,13 @@
 # 港口本底水域生态环境监测管理系统
 
+---
 ## 项目简介
 
 港口本底水域生态环境监测管理系统是一个用于监控和管理港口本底水域生态环境的应用。该系统结合若依前后端分离版框架，提供了水质监测、生态环境数据分析、环境预警、报告生成等功能，以帮助相关管理人员及时了解港口水域的生态环境状况，进行科学的决策和管理。
 
 本系统采用前后端分离架构，前端使用 Vue.js 进行开发，后端采用 Spring Boot 与 MyBatis 进行开发，使用 MySQL 作为数据库，系统支持 RESTful API 交互，具有高可扩展性和易于维护的特点。
 
+---
 ## 技术栈
 
 ### 前端
@@ -28,6 +30,7 @@
 - **Nginx**：用于前端应用的静态文件部署。
 - **Docker**：容器化技术，用于简化应用部署和环境配置。
 
+---
 ## 系统功能
 
 ### 1. 用户管理
@@ -52,5 +55,45 @@
 - **自动生成报告**：系统根据用户选择的时间范围自动生成环境监测报告。
 - **报告导出**：支持将报告导出为 PDF 格式，方便存档和分享。
 
-## 项目结构
+---
+## 项目部署
+### 后端
+- 参照
+https://blog.csdn.net/m0_59381422/article/details/136869494
+
+数据库我的配置是(application-druid.yml)：
+
+            master:
+                url: jdbc:mysql://localhost:3306/ry?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai
+                username: root
+                password: 127020qw
+            # 从库数据源
+            slave:
+                # 从数据源开关/默认关闭
+                enabled: false
+                url: jdbc:mysql://localhost:3306/ry?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai
+                password: 127020qw
+
+![alt text](image.png)
+
+### 前端
+- 下载的前端node-v22.15.0-x64.msi
+- npm -v
+- 10.9.2
+- node -v
+- v22.15.0
+
+---
+
+- 在cmd中：
+- cd /d D:\港口本底水域生态环境监测管理系统\RuoYi-Vue\ruoyi-ui
+- npm install --legacy-peer-deps  
+- npm run dev
+
+
+- 下载的前端Redis-x64-3.0.504.msi
+
+### 启动
+- 运行RuoYiApplication.java
+
 

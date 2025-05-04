@@ -108,17 +108,31 @@
       <el-col :xs="24" :sm="24" :md="12" :lg="8">
         <el-card class="update-log">
           <div slot="header" class="clearfix">
-            <span>捐赠支持</span>
+            <span>关于我们</span>
           </div>
           <div class="body">
             <img
-              src="@/assets/images/pay.png"
-              alt="donate"
-              width="100%"
+              src="@/assets/images/seawater_and_robots.png"
+              alt="icons"
+              width="35%"
             />
-            <span style="display: inline-block; height: 30px; line-height: 30px"
-              >你可以请作者喝杯咖啡表示鼓励</span
-            >
+            <p style="margin-top: 10px;">
+              本系统由大连海事大学的某开发团队设计与实现，旨在为港口本底水域生态环境监测提供高效、智能化的解决方案。
+            </p>
+            <p>
+              我们致力于通过技术手段提升生态环境监测的效率，结合大数据分析与人工智能，为环境保护提供科学依据。
+            </p>
+            <p>
+              如果您有任何建议或合作意向，欢迎通过以下方式联系我们：
+            </p>
+            <ul>
+              <li>邮箱：<a href="mailto:qwamv@proton.me">mailto:qwamv@proton.me</a></li>
+              <li>电话：+86-123-4567-8901</li>
+              <li>地址：辽宁省大连市凌海路1号</li>
+            </ul>
+            <p style="margin-top: 10px;">
+              感谢您的支持！
+            </p>
           </div>
         </el-card>
       </el-col>

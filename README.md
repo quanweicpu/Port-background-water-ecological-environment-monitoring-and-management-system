@@ -95,5 +95,7 @@ https://blog.csdn.net/m0_59381422/article/details/136869494
 
 ### 启动
 - 运行RuoYiApplication.java
-
+- 账号密码：
+- admin
+- 127020qw     
 
